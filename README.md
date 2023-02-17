@@ -1,7 +1,7 @@
 # Ball Tracking With OpenCV
 ### detects and tracks ball in the video based on its color
 
-Amazing simple ball tracker based on its color. (Used green color in this project)
+Amazing simple ball tracker based on its color.
 
 
 ## **Key Points**
@@ -42,7 +42,9 @@ The result is great. The ball is successfully detected. Also if the ball looses 
 
 ![Gif of object tracking](ball-tracking-animated-01.gif)
 
-![Blue object tracking](obj-tracking.gif)
+Blue Object Tracking
+
+![Blue object tracking](obj-tracking.png)
 
 ## **The limitations**
 1. It can't track multiple green balls
