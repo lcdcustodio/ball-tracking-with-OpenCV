@@ -22,8 +22,18 @@ args = vars(ap.parse_args())
 # define the lower and upper boundaries of the "green"
 # ball in the HSV color space, then initialize the
 # list of tracked points
-greenLower = (29, 86, 6)
-greenUpper = (64, 255, 255)
+#greenLower = (29, 86, 6)
+#greenUpper = (64, 255, 255)
+#greenLower = (80, 80, 80)
+#greenUpper = (210, 210, 210)
+#blue
+greenLower = (110,50,50)
+greenUpper = (130,255,255)
+#white
+#greenLower = (0,0,0)
+#greenUpper = (0,0,255)
+
+
 pts = deque(maxlen=args["buffer"])
 
 # if a video path was not supplied, grab the reference
@@ -55,7 +65,9 @@ while True:
 	# color space
 	frame = imutils.resize(frame, width=600)
 	blurred = cv2.GaussianBlur(frame, (11, 11), 0)
+	#blurred = cv2.GaussianBlur(frame, (10, 10), 0)
 	hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
+	#hsv = cv2.cvtColor(blurred, cv2.COLOR_RGB2GRAY)
 
 	# construct a mask for the color "green", then perform
 	# a series of dilations and erosions to remove any small

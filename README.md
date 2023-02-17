@@ -1,10 +1,8 @@
-# Color Based Ball Tracking With OpenCV
+# Ball Tracking With OpenCV
 ### detects and tracks ball in the video based on its color
 
 Amazing simple ball tracker based on its color. (Used green color in this project)
 
-All thanks to Adrian Rosebrock (from [pyimagesearch](https://www.pyimagesearch.com/)) for making
-great tutorials. This project is inspired from his blog: [Ball Tracking with OpenCV](https://www.pyimagesearch.com/2015/09/14/ball-tracking-with-opencv/). I have included the author's code and the one i wrote my self as well.
 
 ## **Key Points**
 1. Steps involved:
@@ -44,6 +42,7 @@ The result is great. The ball is successfully detected. Also if the ball looses 
 
 ![Gif of object tracking](ball-tracking-animated-01.gif)
 
+![Blue object tracking](obj-tracking.gif)
 
 ## **The limitations**
 1. It can't track multiple green balls
